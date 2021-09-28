@@ -51,6 +51,7 @@ export default function SavedQuestionList({
             SAVED_QUESTIONS_VIRTUAL_DB_ID,
             collection.schemaName,
           )}
+          reload
         >
           {({ schema }) => {
             const tables =
