@@ -23,6 +23,7 @@ describe("scenarios > visualizations > waterfall", () => {
       cy.get(".stack._2");
       cy.get(".stack._3");
     });
+
     cy.get(".Visualization .axis.x").within(() => {
       cy.findByText("Total");
     });
@@ -32,6 +33,7 @@ describe("scenarios > visualizations > waterfall", () => {
         cy.findByText(xLabel);
       });
     }
+
     if (yLabel) {
       cy.get(".Visualization .y-axis-label").within(() => {
         cy.findByText(yLabel);
