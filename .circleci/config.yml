@@ -1265,7 +1265,7 @@ workflows:
           source-folder: << matrix.folder >>
           before-steps:
             - wait-for-port:
-                port: 3036
+                port: 3306
             - wait-for-port:
                 port: 5432
             - wait-for-port:
